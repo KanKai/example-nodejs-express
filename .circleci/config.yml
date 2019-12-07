@@ -33,6 +33,6 @@ jobs:
               docker build -t jeerawatk/example-nodejs-circle-staging:latest .
               docker push jeerawatk/example-nodejs-circle-staging:latest
             else
-              echo "This is ${CIRCLE_BRANCH}
+              echo "This is ${CIRCLE_BRANCH}"
             fi
       - run: echo Done
