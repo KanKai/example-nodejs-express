@@ -28,7 +28,7 @@ jobs:
               docker build -t jeerawatk/example-nodejs-circle:${CIRCLE_SHA1} .
               docker push jeerawatk/example-nodejs-circle:latest
               docker push jeerawatk/example-nodejs-circle:${CIRCLE_SHA1}
-            elif [ "${CIRCLE_BRANCH} == "staging" ]; then
+            elif [ "${CIRCLE_BRANCH}" == "staging" ]; then
               cp Dockerfile.staging Dockerfile
               docker build -t jeerawatk/example-nodejs-circle-staging:latest .
               docker push jeerawatk/example-nodejs-circle-staging:latest
