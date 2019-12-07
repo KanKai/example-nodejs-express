@@ -34,5 +34,5 @@ jobs:
               docker push jeerawatk/example-nodejs-circle:staginglatest
             else
               echo "This is ${CIRCLE_BRANCH}
-            fi         
+            fi
       - run: echo Done
